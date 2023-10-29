@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DOCX to PDF Converter</title>
+    <style>
+        body {
+            background-image: url('bc2.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .navbar {
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 00);
+            border-radius: 50px;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 20px 20px;
+            text-decoration: none;
+            border-radius: 50%;
+        }
+
+
+        .navbar img {
+            width: 40px;
+            height: 40px;
+            border-radius: 80%;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 100px auto;
+            max-width: 400px;
+        }
+
+        .main {
+            background-color: rgba(255, 255, 255, 0);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 100px auto;
+            max-width: 400px;
+        }
+
+        h1 {
+            color: #ffff;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="https://home-page-flax-eta.vercel.app/"><img src="home.png" alt="Logo"></a>
+        <a href="https://home-page-flax-eta.vercel.app/"><img src="about.png" alt="Logo"></a>
+        <a href="https://github.com/Srujan-rai"><img src="github.png" alt="Logo"></a>
+
+    </div>
+    <div class="container">
+        <h1>DOCX to PDF Converter</h1>
+        <div class="main">
+            <form action="/convert" method="post" enctype="multipart/form-data">
+                <input type="file" name="docx_file" accept=".docx" required>
+                <br><br>
+                <button type="submit">Convert</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
